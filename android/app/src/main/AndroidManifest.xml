@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.adibdev.alarm">
    <application
-        android:label="alarm"
+        android:label="Electric Alarm On"
         android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"

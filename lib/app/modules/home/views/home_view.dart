@@ -1,6 +1,7 @@
 // import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:alarm/app/modules/home/controllers/ads_controller.dart';
 import 'package:alarm/app/modules/home/models/battery_model.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';
@@ -86,8 +87,10 @@ class HomeView extends GetView<HomeController> {
                   child: Row(
                     children: [
                       Expanded(
-                          flex: (widthS >= 764) ? 8 : 12,
-                          child: Text('Play audio when charging')),
+                        flex: (widthS >= 764) ? 8 : 12,
+                        child: Text(
+                            (kDebugMode) ? 'debug bos' : 'bukan debug bos'),
+                      ),
                       Expanded(
                         flex: 1,
                         child: Switch(

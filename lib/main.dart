@@ -1,3 +1,4 @@
+import 'package:alarm/app/modules/home/ads_id.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
@@ -26,5 +27,6 @@ String get nativeAdUnitId {
   if (kDebugMode)
     return MobileAds.nativeAdTestUnitId;
   else
-    return 'ca-app-pub-3940256099942544/2247696110';
+    // return 'ca-app-pub-3940256099942544/2247696110';
+    return AdsId.idNative;
 }
